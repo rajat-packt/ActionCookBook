@@ -75,7 +75,7 @@ jobs:
             issues: write
             contents: read
         env: 
-            REPO_OWNER: ${{ vars.ORGANIZATION }}
+            REPO_OWNER: rajat-packt
             REPO_NAME: ${{ needs.issue-ops.outputs.REPO_NAME }}
             ISSUE_USER: ${{ github.event.issue.user.login }}
             ISSUE_NUMBER: ${{ github.event.issue.number }}
@@ -86,7 +86,7 @@ jobs:
               with:
                 app-id: ${{ vars.APP_ID }}
                 private-key: ${{ secrets.PRIVATE_KEY }}
-                owner: ${{ vars.ORGANIZATION }}
+                owner: rajat-packt
 
             - name: Create repository
               id: create-repo
