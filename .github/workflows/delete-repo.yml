@@ -1,5 +1,5 @@
 # Delete a repository after approval
-
+name: Delete Repo
 on: 
   workflow_call:
     inputs:
